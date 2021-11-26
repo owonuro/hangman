@@ -1,0 +1,52 @@
+<!--HANGMAN GAME-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HANGMAN</title>
+<meta charset="UTF-8"  />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="hang.css" />
+
+</head>
+
+<body>
+<nav id="navbar">
+<header><h1>HANGMAN</h1></header>
+<ul>
+<!--<li> <a class="nav-link" href="#Functions" >Functions</a> </li>-->
+<!--<li> <a class="nav-link" href="#Objects" >Objects</a> </li>-->
+
+</ul>
+</nav>
+<main id="main-doc" ></main>
+
+<div id="alphabet"></div>
+
+<div id="wrong" ></div>
+
+<div   id='g-over' >
+<h3 >OOPS! GAME OVER! </h3>
+<p >The correct word is <span id="w-word"></span></p>
+<button  class='start' onclick="start()" >RESTART</button>
+</div>
+
+<div id="g-over2">
+<h3>CORRECT! HURRAY!!!</h3>
+<button  class='start' onclick="start()">PLAY AGAIN!</button>
+</div>
+
+<div id="cover"></div>
+
+<footer>
+<time> </time>
+</footer>
+<script type="text/javascript" src="game.js"></script>
+
+</body>
+
+
+
+
+</html>
