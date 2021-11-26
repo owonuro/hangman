@@ -7,8 +7,6 @@ var correctWord ;
 var correctWord2 = [];
 	
 /*This first line of code are used to reset the codes*/
-var pd = document.getElementById('p-doc')
-pd.innerHTML = '';
 var me = document.getElementById('main-doc')
 me.innerHTML = '';
 
