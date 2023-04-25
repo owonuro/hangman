@@ -55,19 +55,87 @@ html
 padding: 0;
 font-family: Times;
 font-weight: 500;
-background-color: rgba(26, 125, 255, 0.1);
+background-color: #e9f7ed;
 }
 
-h1 {
+
+/*body { background-color: blue; }*/
+
+body{
+	-webkit-user-select: none;
+      -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+h2 {
 text-align: center;
 color: rgb(26, 125, 255);
 text-shadow: 2px 2px 3px white, 1px 1px 1px black;
 font-weight: 700;
 font-family: Helvetica;
-margin: 0;
+margin-top: 5px;
+padding-right:60px;
+padding-buttom:-5px;
+margin-left: 40px;
 
 }
 
+h4 {
+text-align: center;
+color: black;
+font-weight:300;
+font-family:Times;
+margin-top: -8px;
+padding-right:50px;
+padding-buttom:-5px;
+margin-left: 50px;
+
+}
+
+
+header{
+display:flex;
+}
+
+
+#h-child1{
+Width:10%;
+}
+
+#h-child2{
+Width:80%;
+}
+
+#h-child3{
+Width:10%;
+}
+
+#h-child3 img{
+margin:auto;
+display: block;
+cursor: pointer;
+max-height:40px;
+max-width: 40px;
+}
+
+#h-child3 img:hover{
+box-shadow: 2px 2px 3px blue, 2px 2px 2px purple;
+}
+
+
+
+#life{
+margin-left:10px;
+margin-top:5px;
+padding:5px;
+background-color:white;;
+text-align:center;
+border-radius:50%;
+border:solid red 2px;
+width:30px;
+}
 
 #my-body{
 display: flex;
@@ -77,10 +145,10 @@ align-items: center;
 
 #def{
 display: flex;
-width: 40%;
+width: 400px;
 }
 
-h1, #main-doc, #def, #alphabet, #wrong{
+h2, #main-doc, #def, #alphabet, #wrong{
 margin-bottom: 10px;
 
 }
@@ -98,11 +166,37 @@ animation-duration: 4s;
 
 }
 
+#side-menu{
+background-color: whitesmoke;
+display: none;
+z-index: 9;
+position:fixed;
+width: 200px;
+top: 50px;
+left: 84%;
+padding: 10px;
+padding-top: 0px;
+
+}
+
+
+#side-menu p{
+padding: 0px;
+margin: 5px;
+cursor: pointer;
+}
+
+#side-menu p:hover{
+color: blue;
+margin-left: 8px;
+}
+
+
 #alphabet{
 overflow-y: hidden;
 position: relative;
 
-width: 40%;
+width: 500px;
 padding: 1%;
 background-color: white;
 box-shadow: 3px 3px  black, -2px -2px black, 1px 1px black, -1px -1px black;
@@ -116,7 +210,7 @@ margin: 3px;
 border:0px;
 border-bottom: solid blue 2px;
 font-size: 27px;
-background-color: none;
+background-color: #e9f7ed;
 text-align: center;
 /*animation-name: droping;
 animation-duration: 2s;
@@ -161,7 +255,7 @@ position: fixed;
 width: 290px;
 height: 170px;
 top: 33%;
-left: 35%;
+left: 30%;
 color: white;
 z-index: 10;
 text-align: center;
@@ -204,6 +298,14 @@ background-color: wheat;
 
 @media(max-width:600px){
 	
+	h2{padding-right:30px;}
+	
+	
+#side-menu{
+width: 200px;
+left: 255px;
+}	
+	
 #wrong, #def{
 width: 80%;
 }
@@ -225,7 +327,7 @@ border: solid rgb(26, 125, 255) 3px;
 animation: droping;
 animation-duration:4s;
 top: 33%;
-left: 20%;
+left: 10%;
 }
 
 #main-doc input{

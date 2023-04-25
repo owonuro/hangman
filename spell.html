@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>I CAN SPELL!</title>
+    <meta name="viewport" content="width=device-width">
+    <script src='file:///android_asset/app.js'></script>
+    <link rel="stylesheet" href="spell.css" />
+    <!--<script type="text/javascript" src="spell.js"> </script>-->
+</head>
+	
+
+
+<body  onload="app.Start()" >
+
+<header>
+<div id='h-child1'><p id='life'>4</p></div>
+<div id='h-child2'>
+<h2>I CAN SPELL!</h2>
+<h4 id="category">GENERAL</h4>
+</div>
+<div id='h-child3'><img id="image" src="settings.png" alt="" ></div>
+</header>
+<div id="side-menu" >
+<p class="side"  id="restart">Restart</p>
+<p  class="side" id="general">General</p>
+<p  class="side" id="simple">Simple</p>
+<!--<p>Medium</p>
+<p>Hard</p>-->
+<p class="side"  id="computer">Computer</p>
+<!--<p class="side"  id="color">Color</p>-->
+<p class="side"  id="definition">Definition</p>
+</div>
+
+<div id="my-body">
+<div id="main-doc" ></div>
+<div id="def"><div id="def-b"><strong>Tip:</strong></div> <marquee id='def2' scrollamount='3'>A fish is a type of animal.</marquee></div>
+
+
+<div id="alphabet"></div>
+
+<div id="wrong" ></div>
+</div>
+
+<div   id='g-over' >
+<h3 >OOPS! GAME OVER! </h3>
+<p >The correct word is <span id="w-word"></span></p>
+<button  class='start' onclick="start()" >RESTART</button>
+</div>
+
+<div id="g-over2">
+<h3>CORRECT! HURRAY!!!</h3>
+<button  class='start' onclick="start()">PLAY AGAIN!</button>
+</div>
+
+<div id="cover"></div>
+
+<footer>
+<time> </time>
+</footer>
+<script type="text/javascript" src="spell.js"> </script>
+
+
+<script>
+    //Called after application is started.
+    function OnStart()
+    {
+       
+       app.Alert( 'Welcome to spelling game. \nSpelling is a needed skill for everyone.\n\tBATEQ production. ' )
+       
+  
+}
+
+</script>
+
+	
+</body>
+</html>
