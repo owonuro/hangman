@@ -89,7 +89,7 @@ self.addEventListener('fetch', (event) => {
     cacheFirst({
       request: event.request,
       preloadResponsePromise: event.preloadResponse,
-      fallbackUrl: './Img/spell.png',
+      fallbackUrl: './index.html',
     })
   );
 });
