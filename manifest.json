@@ -1,0 +1,15 @@
+{
+  "name": "SPELLit",
+  "display": "standalone",
+  "background_color": "#e9f7ed",
+  "theme_color": "blue",
+  "id": "spellit/v1",
+  "icons": [
+    {
+      "src": "Img/spell.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+  
+}

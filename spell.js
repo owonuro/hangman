@@ -98,7 +98,7 @@ wordList = general;
 
 var life = 4;
 
-function addmenu(){
+function addme(){
 document.getElementById('image').addEventListener('click', menuclick);
 }
 
@@ -107,12 +107,38 @@ var winAudio = new Audio('applause.mp3');
 winAudio.play();
 }
 
+//Service worker function start here
+
+const registerServiceWorker = async () => {
+  if ('serviceWorker' in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.register(
+        'service_worker.js',
+        {
+          scope: './',
+        }
+      );
+      if (registration.installing) {
+        console.log('Service worker installing');
+      } else if (registration.waiting) {
+        console.log('Service worker installed');
+      } else if (registration.active) {
+        console.log('Service worker active');
+      }
+    } catch (error) {
+      console.error(`Registration failed with ${error}`);
+    }
+  }
+};
+
+//Service worker function stops here
+
 
 //the function is the whole programme.
 function start() {
 var audio = new Audio('Snd/opening.mp3');
 audio.play();
-addmenu();
+addme();
 
 var lifeE = document.getElementById('life');
 
@@ -326,5 +352,7 @@ bool = 'no';
 
 
 }
+
+registerServiceWorker();
 
 start();
