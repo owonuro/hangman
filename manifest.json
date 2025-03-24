@@ -1,9 +1,18 @@
 {
   "name": "SPELLit",
+  "display_override": ["fullscreen", "minimal-ui"],
   "display": "standalone",
+  
+  "orientation": "any",
+  "short_name": "SPELLit",
+  "description": "A guess the word app like hangman.",
+  "categories": ["games", "education"],
+  
+  
   "background_color": "#e9f7ed",
-  "theme_color": "blue",
+  "theme_color": "#FF6500FF",
   "id": "spellit/v1",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "Img/spell.png",
