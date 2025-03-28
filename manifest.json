@@ -1,7 +1,7 @@
 {
   "name": "SPELLit",
   "display_override": ["fullscreen", "minimal-ui"],
-  "display": "fullscreen",
+  "display": "standalone",
   
   "orientation": "any",
   "short_name": "SPELLit",
