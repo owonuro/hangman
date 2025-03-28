@@ -67,6 +67,7 @@ self.addEventListener('install', (event) => {
     addResourcesToCache([
       './',
       './index.html',
+      './spell.html',
       './spell.css',
       './spell.js',
       './manifest.json',

@@ -69,6 +69,68 @@ body{
         user-select: none;
 }
 
+
+
+#home-image img{
+margin-top:20px;
+margin:auto;
+display: block;
+cursor: pointer;
+max-height:70px;
+max-width: 70px;
+}
+
+
+#home-image{
+margin-top:90px;
+}
+
+#home-title{
+text-align: center;
+color: rgb(26, 125, 255);
+text-shadow: 2px 2px 3px white, 1px 1px 1px black;
+font-weight: 700;
+font-family: Helvetica;
+margin-top: 5px;
+padding-buttom:-5px;
+font-size: 22px;
+}
+
+
+
+.home-menu{
+text-align: center;
+font-weight: 400;
+font-family: Helvetica;
+margin-top: 3px;
+
+margin-buttom: 3px;
+}
+
+
+
+.button-class {
+			background-color: rgb(26, 125, 255);
+			/* Blue */
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 4px;
+		}
+
+
+
+#about{
+display:none;
+}
+#settings{display:none;}
+
 h2 {
 text-align: center;
 color: rgb(26, 125, 255);
@@ -143,6 +205,7 @@ flex-direction: column;
 align-items: center;
 }
 
+/*the def display value was flex but i changed it to disble it*/
 #def{
 display: flex;
 width: 400px;
@@ -298,6 +361,9 @@ background-color: wheat;
 
 @media(max-width:600px){
 	
+#home-image{
+margin-top:180px;
+}
 	h2{padding-right:30px;}
 	
 	

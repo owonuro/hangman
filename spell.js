@@ -1,4 +1,4 @@
-import {general, simple, computer, games, vegetables} from './diction.js';
+import {general, computer, games, vegetables, colours, shapes} from './diction.js';
 
 
 var wordList;
@@ -10,7 +10,7 @@ function selector(){
 		wordList = general;
 		const category = document.getElementById('category');
 		category.innerHTML = 'GENERAL';
-		life = 4;
+		life = 5;
 		start();
 		return;
 		}
@@ -18,20 +18,12 @@ function selector(){
 		wordList = computer;
 		const category =document.getElementById('category');
 		category.innerHTML = 'COMPUTER';
-		life = 4;
+		life = 5;
         start();
 		return;
 		}
 		if(this.id == 'restart'){
-		life = 4;
-		start();
-		return;
-		}
-		if(this.id == 'simple'){
-		wordList = simple;
-		const category =document.getElementById('category');
-		category.innerHTML = 'SIMPLE';
-		life = 4;
+		life = 5;
 		start();
 		return;
 		}
@@ -40,7 +32,7 @@ function selector(){
 		wordList = games;
 		const category =document.getElementById('category');
 		category.innerHTML = 'OUTDOOR GAME';
-		life = 4;
+		life = 5;
 		start();
 		return;
 		}
@@ -49,7 +41,25 @@ function selector(){
 		wordList = vegetables;
 		const category =document.getElementById('category');
 		category.innerHTML = 'VEGETABLES';
-		life = 4;
+		life = 5;
+		start();
+		return;
+		}
+		
+		if(this.id == 'colours'){
+		wordList = colours;
+		const category =document.getElementById('category');
+		category.innerHTML = 'COLOURS';
+		life = 5;
+		start();
+		return;
+		}
+		
+		if(this.id == 'shapes'){
+		wordList = shapes;
+		const category =document.getElementById('category');
+		category.innerHTML = 'SHAPES';
+		life = 5;
 		start();
 		return;
 		}
@@ -92,9 +102,9 @@ function menuclick(){
 
 
 
-wordList = general;
+wordList = computer;
 
-var life = 4;
+var life = 5;
 
 function addme(){
 document.getElementById('image').addEventListener('click', menuclick);
@@ -134,6 +144,11 @@ const registerServiceWorker = async () => {
 
 //the function is the whole programme.
 function start() {
+// This is to disable the tip display
+var definition = document.getElementById('def');
+//alert(definition.style.display);
+definition.style.display = 'none';
+
 var audio = new Audio('Snd/opening.mp3');
 audio.play();
 addme();
@@ -338,7 +353,7 @@ document.getElementById('cover').style.display = 'block';
 document.getElementById('cover').style.backgroundColor = 'red';
 document.getElementById('w-word').innerHTML = '"' + selectedWord2 +'"'
 document.getElementById('g-over').style.display = 'block';
-life = 4;
+life = 5;
 
 }
 

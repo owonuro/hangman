@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>What Word?</title>
+    <meta name="viewport" content="width=device-width">
+   
+    <link rel="stylesheet" href="spell.css" />
+    <link rel="manifest" href="manifest.json" />
+    <!--<script type="text/javascript" src="spell.js"> </script>-->
+</head>
+	
+
+
+<body  >
+
+<header>
+<div id='h-child1'><p id='life'>4</p></div>
+<div id='h-child2'>
+<h2>What Word?</h2>
+<h4 id="category">COMPUTER</h4>
+</div>
+<div id='h-child3'><img id="image" src="settings.png" alt="" ></div>
+</header>
+<div id="side-menu" >
+<p class="side"  id="restart">Restart</p>
+<!--<p  class="side" id="definition">Definition</p>-->
+<p  class="side" id="games">Games</p>
+<p class="side"  id="computer">Computer</p>
+<!--<p class="side"  id="general">General</p>-->
+<p class="side"  id="vegetables"> Vegetables</p>
+<p class="side"  id="colours"> Colours</p>
+<p class="side"  id="shapes"> Shapes</p>
+</div>
+
+<div id="my-body">
+<div id="main-doc" ></div>
+<div id="def"><div id="def-b"><strong>Tip:</strong></div> <marquee id='def2' scrollamount='3'>A fish is a type of animal.</marquee></div>
+
+
+<div id="alphabet"></div>
+
+<div id="wrong" ></div>
+</div>
+
+<div   id='g-over' >
+<h3 >OOPS! GAME OVER! </h3>
+<p >The correct word is <span id="w-word"></span></p>
+<button  class='start' onclick="start()" >RESTART</button>
+</div>
+
+<div id="g-over2">
+<h3>CORRECT! HURRAY!!!</h3>
+<button  class='start' onclick="start()">PLAY AGAIN!</button>
+</div>
+
+<div id="cover"></div>
+
+<footer>
+<time> </time>
+</footer>
+<script type="module" src="spell.js"> </script>
+
+
+	
+</body>
+</html>
